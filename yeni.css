@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+   font-family: 'Dosis' , sans-serif;
+}
+.hero{
+    width: 80%;
+    margin: auto;
+}
+.navbar {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+ul {
+    flex: 1;
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    padding: 0 5px;
+}
+li a::after {
+    content: '';
+    width: 100%;
+    height: 2.5px;
+    background: #f14a60;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -3px;
+    transition: 0.3s;
+}
+
+ul li a:hover::after {
+    width: auto;
+}
+.navbar-icons{
+    margin-left: 40px;
+}
+.navbar-icons i{
+    margin-left: 40px;
+    height: 25px;
+    cursor: pointer;
+}
+.banner {
+    display: flex;
+    margin-top: 80px;
+}
+.left-column, .right-column{
+    flex-basis: 50%;
+}
+.right-column img{
+    width: 100%;
+}
+.search-box{
+    width: 45%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+}
+.search-box i{
+    height: 100%;
+    width: 25px;
+    cursor: pointer;
+    color: rgb(144, 143, 143);
+}
+.search-box input {
+    width: 100%;
+    margin-left: 15px;
+    font-size: 17px;
+    border: 0;
+    outline: none;
+}
+.left-column h1{
+    font-size: 100px;
+    font-family: 'Dosis', sans-serif;
+
+}
+.left-column h3{
+    font-size: 35px;
+    font-family: 'Dosis', sans-serif;
+}
+.span{
+    color: #f14a60;
+}
+.left-column p{
+    font-size: 14px;
+    color: #999;
+    margin: 50px 0;
+
+}
+.btn button{
+    margin-right: 15px;
+    padding: 12px 30px;
+    border-radius: 20px;
+    color: #fb7381;
+    outline: none;
+    border: 1px solid #fb7381;
+    cursor: pointer;
+    background: transparent;
+}
+.btn{
+    margin-bottom: 50px;
+}
+.btn .prm {
+    background: linear-gradient(#fb7381, #f14a60 );
+    box-sizing: 0 2px 15px rgba(248, 38, 103, 0.26);
+    color: #fff;
+}
+.btn .bto:hover{
+    background-color: #f14a60;
+    color: #fff;
+   transition: 0.5s;
+}
+.social-icons{
+    width: 200px;
+    text-align: center;
+    opacity: 0.4;
+    position: relative;
+    margin-left: 160px;
+    cursor: pointer;
+}
+.social-icons i{
+    height: 20px;
+    margin: 0 ;
+    padding-left: 20px;
+    font-size: 30px;
+}
+.social-icons::after{
+    content: '';
+    width: 160px;
+    height: 3px;
+    background: #000;
+    position: absolute;
+    left: -160px;
+    top: 13px;
+    
+}
